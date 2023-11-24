@@ -1,0 +1,38 @@
+body {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20%;
+  column-gap: 20px;
+  justify-content: flex-start;
+}
+app-pokemon-card {
+  margin-top: 5%;
+}
+.next-pokemons-btn {
+  margin: 5% auto;
+  width: 15%;
+  margin-top: 5%;
+  padding: 5px 5px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  background-color: #ffb13b; 
+  color: white; 
+  border: 2px solid #ffb13b;
+}
+.next-pokemons-btn:hover {
+  background-color: white;
+  color: #ffb13b;
+}

@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div class="pokemon-list">
+    <app-pokemon-card 
+      *ngFor="let pokemon of pokemons" 
+      [pokemon]="pokemon"
+    ></app-pokemon-card>
+  </div>
+  <button (click)="showMore()" class="next-pokemons-btn">Show More</button>
+</div>

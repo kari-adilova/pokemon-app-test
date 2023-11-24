@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  margin-top: 3%;
+}
+.pokemon-img {
+  width: 300px;
+  margin-left: 15%;
+}
+.pokemon-info {
+  font-weight: bold;
+  margin-left: 10%;
+}
+.stats-info {
+  display: flex;
+  column-gap: 10px;
+}
+span {
+  padding: 5px 10px;
+  background-color: #4CAF50; 
+  color: #ffffff; 
+  border-radius: 30px; 
+  text-align:left;
+}

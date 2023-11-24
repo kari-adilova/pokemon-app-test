@@ -1,0 +1,23 @@
+<div class="wrapper" *ngIf="pokemonDetails !== undefined">
+  <div class="pokemon-img">
+    <img [src]="pokemonDetails.sprites.other.dream_world.front_default" alt="pokemon image">
+  </div>
+  <div class="pokemon-info">
+    <p>ID: {{ pokemonDetails.id }}</p>
+    <p>Title: {{ pokemonDetails.name }}</p>
+    <p>Height: {{ pokemonDetails.height }}</p>
+    <p>Weight: {{ pokemonDetails.weight }}</p>
+    <p>Some Stats: </p>
+    <div class="stats-info">
+      <span>{{ pokemonDetails.stats[0].stat.name }} : {{pokemonDetails.stats[0].base_stat }}</span>
+      <span>{{ pokemonDetails.stats[1].stat.name }} : {{pokemonDetails.stats[1].base_stat }}</span>
+      <span>{{ pokemonDetails.stats[2].stat.name }} : {{pokemonDetails.stats[2].base_stat }}</span>
+      <span>{{ pokemonDetails.stats[3].stat.name }} : {{pokemonDetails.stats[3].base_stat }}</span>
+      <span>{{ pokemonDetails.stats[4].stat.name }} : {{pokemonDetails.stats[4].base_stat }}</span>
+      <span>{{ pokemonDetails.stats[5].stat.name }} : {{pokemonDetails.stats[5].base_stat }}</span>
+    </div>
+  </div>
+
+</div>
+
+

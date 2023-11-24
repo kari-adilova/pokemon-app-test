@@ -1,0 +1,31 @@
+<div class="pokemon-card">
+  <div class="pokemon-id">
+    <span>ID: </span>
+    <span>{{ pokemon.id }}</span>
+  </div>
+  <div class="pokemon-img">
+    <img [src]="pokemon.sprites.other.dream_world.front_default" alt="">
+  </div>
+  <div class="pokemon-title">
+    <span>{{ pokemon.name | titlecase}}</span>
+  </div>
+  
+  <div class="pokemon-params">
+    <div class="pokemon-params-name">
+      <p>{{ pokemon.height }}</p>
+      <p>Height</p>
+    </div>
+    <div class="pokemon-params-name">
+      <p>{{ pokemon.base_experience }}</p>
+      <p>Experience</p>
+    </div>  
+    <div class="pokemon-params-name">
+      <p>{{ pokemon.order }}</p>
+      <p>Order</p>
+    </div>
+  </div>
+  
+  <a routerLink="{{ pokemon.id }}">
+    <button class="pokemon-details-btn">Show details</button>
+  </a>
+</div>
