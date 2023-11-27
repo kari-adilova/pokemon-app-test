@@ -13,6 +13,7 @@
 .stats-info {
   display: flex;
   column-gap: 10px;
+  flex-wrap: wrap;
 }
 span {
   padding: 5px 10px;
